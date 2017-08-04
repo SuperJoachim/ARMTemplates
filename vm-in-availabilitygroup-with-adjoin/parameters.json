@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_E2_v3"
+        },
+        "adminUsername": {
+            "value": "superusername"
+        },
+        "virtualNetworkName": {
+            "value": "vNet Name Goes Here"
+        },
+        "adminPassword": {
+            "value": "supersecretpassword"
+        },
+        "vnetResourceGroup": {
+            "value": "RG Forv Net - so it doesnt have to be in same RG"
+        },
+        "availabilitySetName": {
+            "value": "AvailabilitySetName for VM's"
+        },
+        "domainUser": {
+            "value": "domain\\adminuser"
+        },
+        "domainName": {
+            "value": "FQDN for domain"
+        },
+        "domainPassword": {
+            "value": "domain Password"
+        },
+        "subnetName": {
+            "value": "subnet name for VMS"
+        },
+        "globalprefix": {
+            "value": [ 
+                "TestVM01",
+                "TestVM02",
+                "TestVM03",
+                "TestVM04"
+            ] 
+        }
+    }
+}
